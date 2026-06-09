@@ -10,6 +10,13 @@ const certs = [
     status: "In Progress",
   },
   {
+    name: "Google Cybersecurity Certificate",
+    issuer: "Google / Coursera",
+    desc: "Comprehensive coverage of security foundations, threat analysis, SIEM tools, Linux, Python scripting, and incident response.",
+    accent: "#34d399",
+    status: "In Progress",
+  },
+  {
     name: "Ethical Hacking Essentials (EHE)",
     issuer: "CodeRED (EC-Council)",
     desc: "Foundations of ethical hacking including footprinting, scanning, enumeration, and system hacking.",
@@ -23,27 +30,8 @@ const certs = [
     accent: "#a78bfa",
     status: "Certified",
   },
-  {
-    name: "Google Cybersecurity Certificate",
-    issuer: "Google / Coursera",
-    desc: "Comprehensive coverage of security foundations, threat analysis, SIEM tools, Linux, Python scripting, and incident response.",
-    accent: "#34d399",
-    status: "In Progress",
-  },
-  {
-    name: "Network Security",
-    issuer: "Cisco NetAcad",
-    desc: "Network security principles, firewall configuration, ACLs, VPN fundamentals, and intrusion prevention systems.",
-    accent: "#fb923c",
-    status: "Certified",
-  },
-  {
-    name: "Introduction to Cybersecurity",
-    issuer: "Cisco NetAcad",
-    desc: "Foundational understanding of cybersecurity landscape, threats, vulnerabilities, and digital privacy.",
-    accent: "#f472b6",
-    status: "Certified",
-  },
+  
+  
 ];
 
 export function Certifications() {
