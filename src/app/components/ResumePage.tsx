@@ -10,7 +10,7 @@ const SECTION = "mb-10";
 const SECTION_TITLE = "text-xl mb-5 pb-2 border-b";
 
 export function ResumePage({ isOpen, onClose }: ResumePageProps) {
-  const resumePdfUrl = "C:\Users\bhava\Downloads\BhavanaPV.pdf"; // Replace with actual PDF URL
+  const resumePdfUrl = "/resume/Bhavana_PV_Resume.pdf"; // Update with actual PDF URL
 
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -35,6 +35,7 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
         >
           {/* Background grid */}
           <div className="fixed inset-0 pointer-events-none bg-[linear-gradient(to_right,#ffffff06_1px,transparent_1px),linear-gradient(to_bottom,#ffffff06_1px,transparent_1px)] bg-[size:28px_28px]" />
+
           {/* Gradient orbs */}
           <div className="fixed top-0 left-0 w-[600px] h-[600px] rounded-full blur-[120px] pointer-events-none" style={{ background: "radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%)" }} />
           <div className="fixed bottom-0 right-0 w-[500px] h-[500px] rounded-full blur-[100px] pointer-events-none" style={{ background: "radial-gradient(circle, rgba(139,92,246,0.08) 0%, transparent 70%)" }} />
@@ -118,22 +119,22 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
                     {
                       icon: <Network className="w-4 h-4" style={{ color: "#60a5fa" }} />,
                       label: "Networking",
-                      items: ["TCP/IP, DNS, HTTP/HTTPS", "Network Troubleshooting", "Packet Analysis (Wireshark)", "IP Addressing & Connectivity Testing"],
+                      items: ["TCP/IP", "DNS", "HTTP/HTTPS", "Network Troubleshooting", "Packet Analysis (Wireshark)", "IP Addressing"],
                     },
                     {
                       icon: <Shield className="w-4 h-4" style={{ color: "#a78bfa" }} />,
                       label: "Security Assessment",
-                      items: ["OWASP Top 10", "MITRE ATT&CK", "Nmap, Burp Suite", "Vulnerability Assessment"],
+                      items: ["OWASP Top 10", "MITRE ATT&CK", "Vulnerability Assessment", "Nmap", "Burp Suite"],
                     },
                     {
                       icon: <Cpu className="w-4 h-4" style={{ color: "#34d399" }} />,
                       label: "Operating Systems",
-                      items: ["Ubuntu Server, Kali Linux", "Windows Administration", "VirtualBox & VMware", "Linux Command Line"],
+                      items: ["Ubuntu Server", "Kali Linux", "Windows", "VirtualBox", "VMware", "Linux CLI"],
                     },
                     {
                       icon: <Cloud className="w-4 h-4" style={{ color: "#38bdf8" }} />,
                       label: "Infrastructure & Hosting",
-                      items: ["WordPress Hosting", "Apache Web Server", "MySQL Administration", "SSL/TLS & DNS Configuration"],
+                      items: ["WordPress Hosting", "Apache", "MySQL", "DNS Configuration", "SSL/TLS"],
                     },
                     {
                       icon: <Terminal className="w-4 h-4" style={{ color: "#f472b6" }} />,
@@ -143,7 +144,7 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
                     {
                       icon: <Code className="w-4 h-4" style={{ color: "#fb923c" }} />,
                       label: "Development & Automation",
-                      items: ["Python", "Bash Scripting", "HTML/CSS", "SQL", "Git & GitHub"],
+                      items: ["Python", "Bash", "HTML/CSS", "SQL", "Git", "GitHub"],
                     },
                   ].map((cat) => (
                     <div key={cat.label} className="rounded-xl p-4 border"
@@ -215,7 +216,7 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
                 <div className="space-y-5">
                   {[
                     {
-                      degree: "Bachelor of Computer Applications (Honours) - Cybersecurity",
+                      degree: "Bachelor of Computer Applications (Honours) – Cybersecurity",
                       inst: "Nitte Institute of Professional Education, Mangalore",
                       period: "2022 – 2026",
                       cgpa: "CGPA: 7.82 / 10 | First Class with Distinction",
@@ -248,11 +249,11 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
                       Development
                     </p>
                     {[
-                      { name: "Python / Scripting", pct: 85 },
+                      { name: "Python", pct: 80 },
                       { name: "Bash / Shell", pct: 80 },
-                      { name: "JavaScript / React", pct: 65 },
-                      { name: "Solidity (Blockchain)", pct: 60 },
-                      { name: "HTML / CSS", pct: 70 },
+                      { name: "HTML / CSS", pct: 75 },
+                      { name: "SQL", pct: 75 },
+                      { name: "Git / GitHub", pct: 85 },
                     ].map((s) => <SkillBar key={s.name} {...s} color="#6366f1" />)}
                   </div>
                   <div className="mt-7 sm:mt-0">
@@ -261,11 +262,11 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
                       Cybersecurity
                     </p>
                     {[
-                      { name: "Penetration Testing", pct: 75 },
-                      { name: "Web Application Security", pct: 80 },
+                      { name: "Vulnerability Assessment", pct: 80 },
                       { name: "Network Security", pct: 78 },
-                      { name: "Security Auditing", pct: 72 },
-                      { name: "Threat Modeling", pct: 68 },
+                      { name: "Linux Administration", pct: 82 },
+                      { name: "Web Application Security", pct: 75 },
+                      { name: "Security Monitoring", pct: 75 },
                     ].map((s) => <SkillBar key={s.name} {...s} color="#8b5cf6" />)}
                   </div>
                 </div>
@@ -278,14 +279,11 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
                 <h2 className={SECTION_TITLE} style={{ color: "#fff", borderColor: "rgba(255,255,255,0.1)" }}>Certifications</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {[
-                    { name: "Google Cybersecurity Certificate", issuer: "Google", date: "2024" },
-                    { name: "CompTIA Security+ (In Progress)", issuer: "CompTIA", date: "2024" },
-                    { name: "EC-Council CEH Fundamentals", issuer: "EC-Council", date: "2023" },
-                    { name: "MITRE ATT&CK Fundamentals", issuer: "AttackIQ", date: "2023" },
-                    { name: "Google IT Support Specialization", issuer: "Google / Coursera", date: "2023" },
-                    { name: "IBM Cybersecurity Analyst", issuer: "IBM / Coursera", date: "2022" },
-                    { name: "Introduction to Networking", issuer: "Cisco NetAcad", date: "2022" },
-                    { name: "Linux Essentials", issuer: "LPI / Coursera", date: "2022" },
+                    { name: "EC-Council CodeRed – Ethical Hacking Essentials", issuer: "EC-Council", date: "2024" },
+                    { name: "EC-Council CodeRed – Dark Web and Anonymity", issuer: "EC-Council", date: "2024" },
+                    { name: "HackerRank – Python (Basic)", issuer: "HackerRank", date: "2024" },
+                    { name: "HackerRank – Problem Solving (Basic)", issuer: "HackerRank", date: "2024" },
+                    { name: "Cisco Networking Academy – Linux Unhatched", issuer: "Cisco", date: "2023" },
                   ].map((cert) => (
                     <div key={cert.name} className="flex items-start gap-3 rounded-xl p-3 border"
                       style={{ background: "rgba(255,255,255,0.025)", borderColor: "rgba(255,255,255,0.07)" }}>
@@ -307,24 +305,24 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
                 <div className="space-y-5">
                   {[
                     {
-                      name: "SecureOps — SIEM Dashboard",
-                      desc: "Real-time security monitoring dashboard with threat detection, log ingestion, alert triage, and incident management. Integrates Elasticsearch for log storage and visualization.",
-                      tags: ["Python", "React", "Elasticsearch", "SIEM"],
+                      name: "OpsPilot – AI-Powered Technical Support Assistant",
+                      desc: "An intelligent support platform designed to help diagnose and troubleshoot infrastructure, hosting, networking, and system administration issues. Provides guided troubleshooting workflows, root-cause analysis suggestions, and step-by-step resolution recommendations.",
+                      tags: ["Python", "Linux", "Troubleshooting", "Technical Support"],
                     },
                     {
-                      name: "Insider Threat Analyzer",
-                      desc: "Behavioral analytics system that detects anomalous insider activity using pattern recognition, user behavior baselining, and automated alerting.",
-                      tags: ["Python", "ML", "UEBA", "Pandas"],
+                      name: "WordPress Hosting Deployment",
+                      desc: "Self-hosted WordPress deployment on Ubuntu Server using Apache and MySQL. Covers DNS configuration, SSL/TLS implementation, firewall hardening, website administration, and Linux server management.",
+                      tags: ["WordPress", "Ubuntu", "Apache", "MySQL", "DNS"],
                     },
                     {
-                      name: "Slowloris DoS Attack Automation",
-                      desc: "Educational simulation of Slowloris HTTP DoS attacks with configurable thread counts, connection rates, and timeout parameters. Designed for controlled lab environments.",
-                      tags: ["Python", "Bash", "Networking"],
+                      name: "SecureOps – Security Monitoring Platform",
+                      desc: "Centralized monitoring platform for repositories, uploaded files, and web applications with issue classification, remediation tracking, and operational visibility features.",
+                      tags: ["Python", "Monitoring", "Security Operations", "Web Applications"],
                     },
                     {
-                      name: "VoteChain — Blockchain Voting System",
-                      desc: "Decentralized voting application on Ethereum using Solidity smart contracts. Ensures tamper-proof ballot integrity, transparent audit trails, and anonymized voter authentication.",
-                      tags: ["Solidity", "Ethereum", "React", "Web3.js"],
+                      name: "Portfolio Website",
+                      desc: "Personal portfolio showcasing projects, certifications, achievements, skills, and career journey with responsive design and modern web technologies.",
+                      tags: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
                     },
                   ].map((proj) => (
                     <div key={proj.name} className="rounded-xl p-5 border"
@@ -349,10 +347,10 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
                 <h2 className={SECTION_TITLE} style={{ color: "#fff", borderColor: "rgba(255,255,255,0.1)" }}>Languages</h2>
                 <div className="flex flex-wrap gap-4">
                   {[
-                    { lang: "English", level: "Fluent" },
-                    { lang: "Hindi", level: "Native" },
+                    { lang: "English", level: "Professional" },
                     { lang: "Malayalam", level: "Native" },
-                    { lang: "Tamil", level: "Verbal" },
+                    { lang: "Hindi", level: "Professional Working Proficiency" },
+                    { lang: "Tamil", level: "Conversational" },
                   ].map((l) => (
                     <div key={l.lang} className="flex items-center gap-3 rounded-xl px-4 py-3 border"
                       style={{ background: "rgba(255,255,255,0.025)", borderColor: "rgba(255,255,255,0.08)" }}>
