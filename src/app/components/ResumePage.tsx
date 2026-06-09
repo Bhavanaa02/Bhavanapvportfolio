@@ -72,7 +72,7 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
                 Bhavana <span style={{ color: "#818cf8" }}>P V</span>
               </h1>
               <p className="text-base" style={{ color: "rgba(255,255,255,0.45)" }}>
-                Cybersecurity Graduate&nbsp;|&nbsp;Security Operations&nbsp;|&nbsp;Technical Analysis&nbsp;|&nbsp;Cyber Defense
+                Cybersecurity Graduate&nbsp;|&nbsp;Technical Support&nbsp;|&nbsp;Infrastructure & Security Operations&nbsp;
               </p>
             </motion.div>
 
