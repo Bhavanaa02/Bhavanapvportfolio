@@ -10,12 +10,12 @@ const SECTION = "mb-10";
 const SECTION_TITLE = "text-xl mb-5 pb-2 border-b";
 
 export function ResumePage({ isOpen, onClose }: ResumePageProps) {
-  const resumePdfUrl = "/resume/Bhavana_PV_Resume.pdf"; // Update with actual PDF URL
+  const resumePdfUrl = "/imports/BhavanaPV.pdf"; // Update with actual PDF URL
 
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resumePdfUrl;
-    link.download = "Bhavana_PV_Resume.pdf";
+    link.download = "BhavanaPV.pdf";
     link.click();
   };
 
