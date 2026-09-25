@@ -3,20 +3,6 @@ import { Award, ExternalLink } from "lucide-react";
 
 const certs = [
   {
-    name: "ISC2 Certified in Cybersecurity (CC) — Candidate",
-    issuer: "ISC2",
-    desc: "Pursuing the globally recognised entry-level cybersecurity certification covering core security principles.",
-    accent: "#6366f1",
-    status: "In Progress",
-  },
-  {
-    name: "Google Cybersecurity Certificate",
-    issuer: "Google / Coursera",
-    desc: "Comprehensive coverage of security foundations, threat analysis, SIEM tools, Linux, Python scripting, and incident response.",
-    accent: "#34d399",
-    status: "In Progress",
-  },
-  {
     name: "Ethical Hacking Essentials (EHE)",
     issuer: "CodeRED (EC-Council)",
     desc: "Foundations of ethical hacking including footprinting, scanning, enumeration, and system hacking.",
