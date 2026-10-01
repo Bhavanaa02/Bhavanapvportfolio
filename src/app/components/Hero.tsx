@@ -72,23 +72,23 @@ export function Hero({ onResumeClick }: HeroProps) {
                   color: "rgba(255,255,255,0.55)",
                 }}
               >
-                Cybersecurity Graduate focused on Security Operations,
-                Infrastructure, and Technical Support. Building practical
-                solutions through hands-on projects in network analysis,
-                automation workflows, and secure application development.
+                Cybersecurity graduate with hands-on experience in software
+development, security operations, infrastructure, and networking.
+Building practical solutions through Python, automation,
+secure application development, and technical projects.
               </p>
             </div>
 
             {/* Pills */}
             <div className="flex flex-wrap gap-2">
               {[
-                "Security Operations",
-                "Linux",
-                "Python",
-                "Networking",
-                "Infrastructure",
-                "Web Security",
-              ].map((tag) => (
+  "Python",
+  "Software Development",
+  "Cybersecurity",
+  "Linux",
+  "Networking",
+  "Infrastructure",
+].map((tag) => (
                 <span
                   key={tag}
                   className="px-3 py-1 rounded-full text-xs border"
