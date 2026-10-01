@@ -18,12 +18,17 @@ import {
 interface ResumePageProps {
   isOpen: boolean;
   onClose: () => void;
+  onContact: () => void;
 }
 
 const SECTION = "mb-10";
 const SECTION_TITLE = "text-xl mb-5 pb-2 border-b";
 
-export function ResumePage({ isOpen, onClose }: ResumePageProps) {
+export function ResumePage({
+  isOpen,
+  onClose,
+  onContact,
+}: ResumePageProps) {
   const resumePdfUrl = "/BHAVANA_PV_RESUME.pdf";
 
   const handleDownload = () => {
@@ -160,7 +165,7 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={onClose}
+                onClick={onContact}
                 className="inline-flex items-center gap-2 px-7 py-3 rounded-xl border transition-colors hover:bg-white/5"
                 style={{
                   borderColor: "rgba(255,255,255,0.15)",
@@ -356,7 +361,6 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
                 </h2>
 
                 <div className="space-y-8">
-
                   <div className="flex gap-4">
 
                     <div className="flex flex-col items-center">
@@ -437,7 +441,6 @@ export function ResumePage({ isOpen, onClose }: ResumePageProps) {
 
                     </div>
                   </div>
-
                 </div>
               </div>
             </FadeSection>
