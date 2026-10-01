@@ -14,7 +14,7 @@ with a focus on a clean, responsive, and interactive cybersecurity-themed interf
 
 The original website design was created in Figma:
 
-[View Figma Design](https://www.figma.com/design/oluj7cVFe7sXNrIER7UNqK/Cybersecurity-Portfolio-Website-Design)
+[View Figma Design](https://ignite-flyer-35520066.figma.site/)
 
 ## Tech Stack
 
