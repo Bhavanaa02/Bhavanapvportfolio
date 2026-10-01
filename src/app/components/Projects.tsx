@@ -5,56 +5,73 @@ const projects = [
   {
     title: "SecureOps",
     description: "Automated Security Analysis & Developer Guidance Platform",
-    details: "Comprehensive security operations platform that automates vulnerability scanning, provides real-time threat intelligence, and offers actionable developer guidance for security best practices.",
+    details:
+      "Comprehensive security operations platform that automates vulnerability scanning, provides real-time threat intelligence, and offers actionable developer guidance for security best practices.",
     icon: Shield,
     tags: ["Python", "Security Operations", "Automation", "Threat Intelligence"],
     github: "https://github.com/Bhavanaa02/SecureOps",
     accent: "#6366f1",
   },
-  {
-    title: "Slowloris DoS Attack Automation",
-    description: "Python-based attack simulation and traffic behaviour analysis",
-    details: "Educational framework for simulating Slowloris denial-of-service attacks in controlled lab environments, analysing network traffic patterns and testing server resilience under stress.",
-    icon: Zap,
-    tags: ["Python", "Network Security", "Attack Simulation", "Wireshark"],
-    github: "https://github.com/Bhavanaa02/Slowloris-Attack",
-    accent: "#f472b6",
-  },
+
   {
     title: "VoteChain",
     description: "Blockchain-based secure electronic voting system",
-    details: "Decentralised voting platform using blockchain technology to ensure vote integrity, prevent tampering, and provide transparent, auditable election processes while maintaining voter privacy.",
+    details:
+      "Decentralised voting platform using blockchain technology to ensure vote integrity, prevent tampering, and provide transparent, auditable election processes while maintaining voter privacy.",
     icon: Vote,
     tags: ["Blockchain", "Solidity", "Cryptography", "Web3"],
     github: "https://github.com/Bhavanaa02/Vote-chain",
     accent: "#22d3ee",
   },
+
   {
-  title: "OpsPilot",
-  description: "AI-assisted infrastructure monitoring and troubleshooting platform",
-  details: "A Linux-focused operations platform that combines server health monitoring with guided troubleshooting workflows. Tracks system resources, network activity, and operational events while helping users diagnose common infrastructure and hosting issues through structured resolution steps.",
-  icon: Activity,
-  tags: ["Linux", "Python", "Bash", "Monitoring", "Troubleshooting"],
-  github: "https://github.com/Bhavanaa02/opsPilot",
-  accent: "#34d399",
-},
-{
-  title: "WordPress Hosting Lab",
-  description: "Self-hosted WordPress deployment and web hosting environment",
-  details: "Hands-on hosting project involving the deployment and administration of WordPress on Ubuntu Server using Apache and MySQL. Covers DNS configuration, SSL/TLS implementation, firewall hardening, and Linux server management while following web hosting and security best practices.",
-  icon: Server,
-  tags: ["WordPress", "Ubuntu", "Apache", "MySQL", "DNS"],
-  github: "https://github.com/Bhavanaa02/wordpress-hosting-deployment",
-  accent: "#fb923c",
-},
+    title: "OpsPilot",
+    description: "AI-assisted infrastructure monitoring and troubleshooting platform",
+    details:
+      "A Linux-focused operations platform that combines server health monitoring with guided troubleshooting workflows. Tracks system resources, network activity, and operational events while helping users diagnose common infrastructure and hosting issues through structured resolution steps.",
+    icon: Activity,
+    tags: ["Linux", "Python", "Bash", "Monitoring", "Troubleshooting"],
+    github: "https://github.com/Bhavanaa02/opsPilot",
+    accent: "#34d399",
+  },
+
   {
     title: "QR Scanner",
     description: "QR code-based phishing and malicious URL detection",
-    details: "Tool developed during internship at Albus Security LLP that decodes QR codes and analyses the embedded URLs for phishing indicators, malicious domains, and suspicious redirect chains.",
+    details:
+      "Tool developed during internship at Albus Security LLP that decodes QR codes and analyses the embedded URLs for phishing indicators, malicious domains, and suspicious redirect chains.",
     icon: Globe,
-    tags: ["Python", "URL Analysis", "Phishing Detection", "Security Research","JavaScript"],
+    tags: [
+      "Python",
+      "URL Analysis",
+      "Phishing Detection",
+      "Security Research",
+      "JavaScript",
+    ],
     github: "https://github.com/Bhavanaa02/QR_scanner",
     accent: "#a78bfa",
+  },
+
+  {
+    title: "Slowloris DoS Attack Automation",
+    description: "Python-based attack simulation and traffic behaviour analysis",
+    details:
+      "Educational framework for simulating Slowloris denial-of-service attacks in controlled lab environments, analysing network traffic patterns and testing server resilience under stress.",
+    icon: Zap,
+    tags: ["Python", "Network Security", "Attack Simulation", "Wireshark"],
+    github: "https://github.com/Bhavanaa02/Slowloris-Attack",
+    accent: "#f472b6",
+  },
+
+  {
+    title: "WordPress Hosting Lab",
+    description: "Self-hosted WordPress deployment and web hosting environment",
+    details:
+      "Hands-on hosting project involving the deployment and administration of WordPress on Ubuntu Server using Apache and MySQL. Covers DNS configuration, SSL/TLS implementation, firewall hardening, and Linux server management while following web hosting and security best practices.",
+    icon: Server,
+    tags: ["WordPress", "Ubuntu", "Apache", "MySQL", "DNS"],
+    github: "https://github.com/Bhavanaa02/wordpress-hosting-deployment",
+    accent: "#fb923c",
   },
 ];
 
@@ -74,7 +91,7 @@ export function Projects() {
             <h2 className="text-3xl lg:text-4xl" style={{ color: "#f0f2f7" }}>Projects</h2>
             <div className="w-12 h-px mx-auto" style={{ background: "linear-gradient(90deg,transparent,#6366f1,transparent)" }} />
             <p className="max-w-xl mx-auto text-sm pt-1" style={{ color: "rgba(255,255,255,0.45)" }}>
-              Hands-on projects in security operations, automation, infrastructure, and secure application development.
+             Hands-on projects spanning software development, cybersecurity, automation, infrastructure, and secure application development.
             </p>
           </div>
 
