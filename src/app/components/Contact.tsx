@@ -6,7 +6,7 @@ const contacts = [
     icon: Linkedin,
     label: "LinkedIn",
     value: "Connect on LinkedIn",
-    link: "https://linkedin.com/bhavanapv",
+    link: "https://www.linkedin.com/in/bhavanapv",
     color: "text-[#0077b5]",
   },
   {
