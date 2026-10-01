@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Navigation } from "./components/Navigation";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
@@ -13,11 +13,20 @@ import { ResumePage } from "./components/ResumePage";
 export default function App() {
   const [resumeOpen, setResumeOpen] = useState(false);
 
-    return (
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
+  return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navigation />
+
       <main>
         <Hero onResumeClick={() => setResumeOpen(true)} />
+
         <About />
         <Projects />
         <Experience />
@@ -26,7 +35,18 @@ export default function App() {
         <Skills />
         <Contact />
       </main>
-      <ResumePage isOpen={resumeOpen} onClose={() => setResumeOpen(false)} />
+
+      <ResumePage
+        isOpen={resumeOpen}
+        onClose={() => setResumeOpen(false)}
+        onContact={() => {
+          setResumeOpen(false);
+
+          setTimeout(() => {
+            scrollToSection("contact");
+          }, 100);
+        }}
+      />
     </div>
   );
 }
