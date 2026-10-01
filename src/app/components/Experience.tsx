@@ -7,17 +7,17 @@ const experiences = [
     company: "Albus Security LLP",
     period: "Feb 2025 - Sep 2025",
     responsibilities: [
-      "Completed a 7-month Security Internship at Albus Security LLP focused on Information Security, Web Security, and Web Exploit Development",
+      "Completed a 7-month internship focused on Information Security, Web Security, and hands-on security research",
 
-  "Researched and implemented reverse shell bypass techniques in controlled lab environments to understand attack methodologies and defensive countermeasures",
+      "Worked with Python-based security projects involving automation, network analysis, and controlled security testing",
 
-  "Developed a Slowloris DoS attack automation project for security testing, network traffic analysis, and server resilience assessment",
+      "Developed a Slowloris DoS attack automation project to study traffic behaviour, attack patterns, and server resilience in controlled environments",
 
-  "Contributed to the development of a QR-based threat analysis solution capable of identifying phishing, malicious, and suspicious URLs",
+      "Contributed to the development of a QR-based threat analysis solution as part of a team, focused on identifying phishing, malicious, and suspicious URLs",
 
-  "Performed network traffic analysis and packet inspection using Wireshark while studying protocol behavior and security events",
+      "Performed network traffic analysis and packet inspection using Wireshark to study protocols, traffic behaviour, and security events",
 
-  "Collaborated on cybersecurity projects involving vulnerability assessment, security monitoring, technical documentation, and operational security practices"
+      "Gained practical experience with vulnerability assessment, web security research, technical documentation, and security-focused problem solving",
     ],
   },
 ];
@@ -33,14 +33,30 @@ export function Experience() {
           transition={{ duration: 0.6 }}
           className="space-y-12"
         >
-          
-        <div className="text-center space-y-3">
-           
-            <h2 className="text-3xl lg:text-4xl" style={{ color: "#f0f2f7" }}>Experience</h2>
-            <div className="w-12 h-px mx-auto" style={{ background: "linear-gradient(90deg,transparent,#6366f1,transparent)" }} />
-          </div>
+          <div className="text-center space-y-3">
+            <h2
+              className="text-3xl lg:text-4xl"
+              style={{ color: "#f0f2f7" }}
+            >
+              Experience
+            </h2>
 
-          
+            <div
+              className="w-12 h-px mx-auto"
+              style={{
+                background:
+                  "linear-gradient(90deg,transparent,#6366f1,transparent)",
+              }}
+            />
+
+            <p
+              className="max-w-xl mx-auto text-sm pt-1"
+              style={{ color: "rgba(255,255,255,0.45)" }}
+            >
+              Hands-on experience across cybersecurity, technical research,
+              automation, and network analysis.
+            </p>
+          </div>
 
           <div className="relative">
             {/* Timeline line */}
@@ -66,14 +82,19 @@ export function Experience() {
                         <div className="p-2 rounded-lg bg-primary/10 border border-primary/20">
                           <Briefcase className="w-5 h-5 text-primary" />
                         </div>
+
                         <div>
                           <h3 className="text-xl font-semibold text-foreground">
                             {exp.title}
                           </h3>
-                          <p className="text-primary">{exp.company}</p>
+
+                          <p className="text-primary">
+                            {exp.company}
+                          </p>
                         </div>
                       </div>
                     </div>
+
                     <span className="px-4 py-2 rounded-full bg-secondary border border-border text-sm text-foreground whitespace-nowrap">
                       {exp.period}
                     </span>
@@ -84,7 +105,10 @@ export function Experience() {
                     {exp.responsibilities.map((responsibility, idx) => (
                       <div key={idx} className="flex gap-3 items-start">
                         <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <p className="text-muted-foreground">{responsibility}</p>
+
+                        <p className="text-muted-foreground">
+                          {responsibility}
+                        </p>
                       </div>
                     ))}
                   </div>
