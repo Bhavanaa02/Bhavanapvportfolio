@@ -35,11 +35,11 @@ export function About() {
               transition={{ delay: 0.15 }}
               className="space-y-5"
             >
-              <p
+             <p
   className="leading-relaxed"
   style={{ color: "rgba(255,255,255,0.58)", fontSize: "1.0625rem" }}
 >
-  I am a BCA (Honours) graduate specialising in Cybersecurity with a strong interest in security operations, infrastructure, networking, and emerging technologies. My journey has been shaped by hands-on learning, practical projects, and real-world exposure through a 7-month internship at Albus Security LLP, where I worked on vulnerability assessment, reverse shell analysis, web application security research, and DoS testing.
+  I am a BCA (Honours) graduate specialising in Cybersecurity with a strong interest in cybersecurity, software development, infrastructure, networking, and emerging technologies. My journey has been shaped by hands-on learning, practical projects, and real-world exposure through a 7-month internship at Albus Security LLP, where I worked on vulnerability assessment, reverse shell analysis, web application security research, and DoS testing.
 </p>
 
 <p
@@ -53,15 +53,14 @@ export function About() {
   className="leading-relaxed"
   style={{ color: "rgba(255,255,255,0.58)", fontSize: "1.0625rem" }}
 >
-  I enjoy building, experimenting, and learning through practice—whether it is exploring security concepts, deploying applications, working with Linux environments, or developing technical solutions. I believe growth comes from curiosity, consistency, and a willingness to take on new challenges. Currently, I am seeking opportunities in Cybersecurity, IT Operations, Technical Support, System Administration, and Infrastructure roles where I can contribute, learn, and continue building a strong foundation in technology.
+  I enjoy building, experimenting, and learning through practice—whether it is exploring security concepts, developing software, deploying applications, working with Linux environments, or analysing technical problems. I am particularly interested in opportunities where software development, cybersecurity, and infrastructure intersect. I look forward to strengthening my engineering skills through practical work, learning from experienced teams, and contributing to real-world technical solutions.
 </p>
-
               <div className="grid grid-cols-2 gap-3 pt-2">
                 {[
                   { label: "Degree",     val: "BCA (Hons) Cybersecurity"  },
                   { label: "Internship", val: "Albus Security LLP · 7 Months" },
                   { label: "Location",   val: "Kasaragod, Kerala, India"    },
-                  { label: "Focus Areas",     val: "Cybersecurity · IT Operations · Infrastructure"     },
+                  { label: "Focus Areas", val: "Cybersecurity · Software · Infrastructure"      },
                 ].map((f) => (
                   <div key={f.label} className="rounded-xl p-3 border"
                     style={{ background: "rgba(255,255,255,0.025)", borderColor: "rgba(255,255,255,0.07)" }}>
