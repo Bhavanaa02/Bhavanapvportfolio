@@ -1,7 +1,43 @@
 import { motion } from "motion/react";
-import { Code2, Terminal, Network, Shield, Server, GitBranch, Globe } from "lucide-react";
+import {
+  Code2,
+  Terminal,
+  Network,
+  Shield,
+  Server,
+  GitBranch,
+} from "lucide-react";
 
 const categories = [
+  {
+    icon: Code2,
+    label: "Programming & Development",
+    accent: "#f472b6",
+    tags: [
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "Java",
+      "Bash Scripting",
+      "SQL",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
+    icon: GitBranch,
+    label: "Software & Tools",
+    accent: "#a78bfa",
+    tags: [
+      "React",
+      "REST APIs",
+      "Git",
+      "GitHub",
+      "Figma",
+      "Vercel",
+      "VS Code",
+    ],
+  },
   {
     icon: Shield,
     label: "Security",
@@ -45,18 +81,6 @@ const categories = [
     ],
   },
   {
-    icon: Code2,
-    label: "Programming & Scripting",
-    accent: "#f472b6",
-    tags: [
-      "Python",
-      "Bash Scripting",
-      "SQL",
-      "HTML",
-      "CSS",
-    ],
-  },
-  {
     icon: Server,
     label: "Infrastructure",
     accent: "#fb923c",
@@ -68,19 +92,8 @@ const categories = [
       "DNS Management",
     ],
   },
-  {
-    icon: GitBranch,
-    label: "Tools & Platforms",
-    accent: "#a78bfa",
-    tags: [
-      "Git",
-      "GitHub",
-      "VS Code",
-      "Semgrep",
-      "Gitleaks",
-    ],
-  },
 ];
+
 export function Skills() {
   return (
     <section id="Skills" className="py-24 px-6 relative">
@@ -93,8 +106,28 @@ export function Skills() {
           className="space-y-16"
         >
           <div className="text-center space-y-3">
-            <h2 className="text-3xl lg:text-4xl" style={{ color: "#f0f2f7" }}>Skills</h2>
-            <div className="w-12 h-px mx-auto" style={{ background: "linear-gradient(90deg,transparent,#6366f1,transparent)" }} />
+            <h2
+              className="text-3xl lg:text-4xl"
+              style={{ color: "#f0f2f7" }}
+            >
+              Skills
+            </h2>
+
+            <div
+              className="w-12 h-px mx-auto"
+              style={{
+                background:
+                  "linear-gradient(90deg,transparent,#6366f1,transparent)",
+              }}
+            />
+
+            <p
+              className="max-w-xl mx-auto text-sm pt-1"
+              style={{ color: "rgba(255,255,255,0.45)" }}
+            >
+              Technologies and tools I have worked with across software
+              development, cybersecurity, networking, and infrastructure.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -106,14 +139,36 @@ export function Skills() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
                 className="rounded-2xl border p-5 space-y-4"
-                style={{ background: "rgba(255,255,255,0.025)", borderColor: "rgba(255,255,255,0.07)" }}
+                style={{
+                  background: "rgba(255,255,255,0.025)",
+                  borderColor: "rgba(255,255,255,0.07)",
+                }}
               >
-                <div className="flex items-center gap-3 pb-3 border-b" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
-                  <div className="w-8 h-8 rounded-lg flex items-center justify-center border"
-                    style={{ background: `rgba(${hr(cat.accent)},0.1)`, borderColor: `rgba(${hr(cat.accent)},0.25)` }}>
-                    <cat.icon className="w-4 h-4" style={{ color: cat.accent }} />
+                <div
+                  className="flex items-center gap-3 pb-3 border-b"
+                  style={{
+                    borderColor: "rgba(255,255,255,0.06)",
+                  }}
+                >
+                  <div
+                    className="w-8 h-8 rounded-lg flex items-center justify-center border"
+                    style={{
+                      background: `rgba(${hr(cat.accent)},0.1)`,
+                      borderColor: `rgba(${hr(cat.accent)},0.25)`,
+                    }}
+                  >
+                    <cat.icon
+                      className="w-4 h-4"
+                      style={{ color: cat.accent }}
+                    />
                   </div>
-                  <span className="text-sm" style={{ color: "rgba(255,255,255,0.8)" }}>{cat.label}</span>
+
+                  <span
+                    className="text-sm"
+                    style={{ color: "rgba(255,255,255,0.8)" }}
+                  >
+                    {cat.label}
+                  </span>
                 </div>
 
                 <div className="flex flex-wrap gap-1.5">
@@ -122,7 +177,11 @@ export function Skills() {
                       key={tag}
                       whileHover={{ scale: 1.05 }}
                       className="px-2.5 py-1 text-xs rounded-lg border cursor-default transition-colors"
-                      style={{ background: "rgba(255,255,255,0.03)", borderColor: "rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.6)" }}
+                      style={{
+                        background: "rgba(255,255,255,0.03)",
+                        borderColor: "rgba(255,255,255,0.08)",
+                        color: "rgba(255,255,255,0.6)",
+                      }}
                     >
                       {tag}
                     </motion.span>
@@ -138,5 +197,8 @@ export function Skills() {
 }
 
 function hr(hex: string): string {
-  return `${parseInt(hex.slice(1,3),16)},${parseInt(hex.slice(3,5),16)},${parseInt(hex.slice(5,7),16)}`;
+  return `${parseInt(hex.slice(1, 3), 16)},${parseInt(
+    hex.slice(3, 5),
+    16
+  )},${parseInt(hex.slice(5, 7), 16)}`;
 }
